@@ -1,7 +1,6 @@
-<h1>Movie Favourties</h1>
-<ul>
-  <li *ngFor="let movie of movies"> {{ movie.title }}
-       ({{ movie.year }}) - Directed by {{ movie.director }}
-  </li>
-</ul>
-<p>EunanMurray S00235207</p>
+
+<div class="containter">
+  <h1>Movie Favourties</h1>
+  <app-add-movie></app-add-movie>
+  <app-list-movies></app-list-movies>
+</div>

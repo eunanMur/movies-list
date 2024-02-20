@@ -8,13 +8,18 @@ export class MovieService {
   constructor() { }
 
   movieList = [
-    { id: 1, title: 'Drive', year: '2011', director: 'Nicolas Winding Refn' },
-    { id: 2, title: 'La La Land', year: '2016', director: 'Damien Chazelle' },
-    { id: 3, title: 'The Nice Guys', year: '2016', director: 'Shane Black' },
-    { id: 4, title: 'The Big Short', year: '2015', director: 'Adam McKay' },
+    { title: 'Drive', year: '2011', director: 'Nicolas Winding Refn' },
+    { title: 'La La Land', year: '2016', director: 'Damien Chazelle' },
+    { title: 'The Nice Guys', year: '2016', director: 'Shane Black' },
+    { title: 'The Big Short', year: '2015', director: 'Adam McKay' },
   ];
 
   getMovies() {
     return this.movieList;
   }
+
+  addMovie(movietitle:string, moviedirector:string, movieyear:string) {
+    this.movieList.push({title:movietitle, director:moviedirector, year:movieyear});
+  }
+
 }
